@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+    <title>Jumping Things</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <h1>Jumping Things</h1>
+          <p>Three mobile-friendly levels with spikes, half blocks, and decorations.</p>
+        </div>
+        <button id="restartBtn" class="ghost-btn">Restart</button>
+      </header>
+
+      <section class="game-shell">
+        <canvas id="gameCanvas" width="360" height="640"></canvas>
+        <div class="hud">
+          <div id="levelLabel">Level 1 • Easy</div>
+          <div id="statusLabel">Run, jump, and reach the flag.</div>
+        </div>
+
+        <div class="controls" aria-label="Game controls">
+          <button class="control-btn" data-action="left">◀</button>
+          <button class="control-btn jump" data-action="jump">Jump</button>
+          <button class="control-btn" data-action="right">▶</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
